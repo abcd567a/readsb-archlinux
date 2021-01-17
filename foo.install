@@ -1,0 +1,14 @@
+post_install () {
+
+## ENABLE READSB SERVICE
+  sudo useradd --system --no-create-home readsb
+  sudo systemctl enable readsb.service
+  sudo systemctl restart readsb.service
+
+  echo ""
+  echo ""
+  echo ""
+  echo  -e "\e[91m REBOOT COMPUTER/RPi \e[97m "
+ echo ""  
+
+}
