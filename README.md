@@ -49,7 +49,7 @@ sudo systemctl restart readsb
 To edit config, edit following file
 `sudo nano /etc/default/readsb  `   </br>
 
-After completing & saving config changes, restart readsb
-`sudo systemctl restart dump1090-fa `  </br>
+After completing & saving config changes, restart readsb </br>
+`sudo systemctl restart readsb `  </br>
 
 </br></br>
