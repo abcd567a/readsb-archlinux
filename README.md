@@ -20,9 +20,7 @@ The cloned directory contains following three files
 - foo.install
 - README.md
 
-Give command `makepkg -si `
-
-Above command will run the PKGBUILD script which will: 
+The command `makepkg -si ` will run the PKGBUILD script which will: 
 
 1. Check for conflicts with existing other versions of dump1090
 2. Check Build tools needed (git, make, gcc, pkgconf, binutils, and fakeroot), and will offer to install missing tools [Yes/no]. 
@@ -30,12 +28,12 @@ Above command will run the PKGBUILD script which will:
 4. Build package `readsb-*.pkg.tar.xz` or `readsb-*.pkg.tar.zst`
 5. Offer to install the above package [Yes/no]
 
-The above package can be install later also by following command:
+If you say "no" to install the package (item 5 above), then the built package can be install later by following command:
 ```
-cd dump1090-fa-arch 
+cd readsb-archlinux 
 sudo pacman -U readsb-*.pkg.tar.*
 ```
-**AFTER INSTALLATION, REBOOT COMPUTER / RPI.**
+
 
 **To check status:**
 ```
