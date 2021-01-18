@@ -2,7 +2,9 @@
 
 
 ### readsb for Arch Linux & Arch Linux Arm
+**This PKGBUILD script uses Source code at: https://github.com/wiedehopf/readsb**
 
+## To install give following commands  </br>
 ```
 git clone https://github.com/abcd567a/readsb-archlinux.git
 
@@ -33,7 +35,7 @@ The above package can be install later also by following command:
 cd dump1090-fa-arch 
 sudo pacman -U readsb-*.pkg.tar.*
 ```
-### AFTER INSTALLATION, REBOOT COMPUTER / RPI.
+**AFTER INSTALLATION, REBOOT COMPUTER / RPI.**
 
 **To check status:**
 ```
