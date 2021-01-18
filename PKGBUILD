@@ -2,7 +2,7 @@
 #Maintener: abcd567
 
 pkgname=readsb
-pkgver=4
+pkgver=latest
 pkgrel=1
 arch=('x86_64' 'i686' 'armh6' 'armh7' 'armv6l' 'armv7l' 'armv6h' 'armv7h')
 license=('GPL')
@@ -43,17 +43,16 @@ pkgver() {
 
 build() {
   cd ${srcdir}/readsb
-  sudo sed -i -e 's/, libblade.*//' debian/control
   make RTLSDR=yes
 }
 
 package() {
-
   mkdir -p ${pkgdir}/usr/bin
   cp  ${srcdir}/readsb/readsb  ${pkgdir}/usr/bin/readsb
   
   mkdir -p ${pkgdir}/etc/default
   cp ${srcdir}/readsb/debian/readsb.default  ${pkgdir}/etc/default/readsb
+
   mkdir -p ${pkgdir}/usr/lib/systemd/system
   cp ${srcdir}/readsb/debian/readsb.service  ${pkgdir}/usr/lib/systemd/system/readsb.service
 }
