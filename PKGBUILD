@@ -29,7 +29,7 @@ conflicts=('dump1090'
 echo -e "\e[93mPackage building is running in background \e[97m"
 echo -e "\e[93mIt will take a while to display progress, please wait.... \e[97m"
 
-source=('readsb::git+git://github.com/wiedehopf/readsb.git')
+source=('readsb::git+https://github.com/wiedehopf/readsb.git')
 
 md5sums=('SKIP')
 
